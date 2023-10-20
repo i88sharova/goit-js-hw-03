@@ -1,12 +1,7 @@
 "use strict"
 function checkForSpam(message)
  { message=message.toLowerCase();
-   if (message.includes(`sale`)||message.includes(`spam`)){
-return `true`;
-   }
-   else {
-      return `false`;
-   }
+   return (message.includes(`sale`)||message.includes(`spam`));
  }
  console.log(checkForSpam("Latest technology news")); // false
 console.log(checkForSpam("JavaScript weekly newsletter")); // false
